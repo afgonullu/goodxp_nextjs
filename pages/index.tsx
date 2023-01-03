@@ -23,7 +23,7 @@ export async function getPosts() {
     });
 }
 
-export default function Home({ posts }) {
+export default function Home({ posts }: { posts: any }) {
   console.log(posts);
   return (
     <>
@@ -119,7 +119,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: any) {
   const posts = await getPosts();
 
   if (!posts) {
