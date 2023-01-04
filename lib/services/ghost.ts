@@ -1,9 +1,10 @@
 import GhostContentAPI from '@tryghost/content-api';
+import config from '../config';
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: 'https://blog.goodxp.org',
-  key: '3e6dc3f011142c8a94181f88f6',
+  url: config.API_URL,
+  key: config.CONTENT_API_KEY,
   version: 'v5.0',
 });
 
