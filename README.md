@@ -1,3 +1,31 @@
+## Remarks
+
+- Folder Structure
+  For the components folder organization, MUI Component organization can be used whenever it is applicable. Below is a reference.
+
+```
+├──/components
+│ ├──/layouts
+│ ├──/surfaces
+│ ├──/navigations
+│ ├──/feedbacks
+│ ├──/inputs
+│ ├──/data-displays
+│ ├──/utils
+│ ├──/templates
+├──/hooks
+├──/contexts / (store)
+├──/lib
+│ ├──/clients
+│ ├──/constants
+│ ├──/services
+│ ├──config.ts
+├──/pages
+├──/public
+├──/styles
+├──/utils
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
