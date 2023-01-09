@@ -5,7 +5,7 @@ export interface IXTemplate {
 const XTemplate = ({ name }: IXTemplate) => {
   const greet = 'Hello world!';
 
-  return <div>{`${name}, ${greet}`}</div>;
+  return <div className="container">{`${name}, ${greet}`}</div>;
 };
 
 export default XTemplate;

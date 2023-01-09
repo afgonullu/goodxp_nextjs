@@ -1,2 +1,3 @@
 .container {
+  @apply bg-black text-2xl;
 }
