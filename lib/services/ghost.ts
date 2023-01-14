@@ -1,4 +1,5 @@
 import GhostContentAPI from '@tryghost/content-api';
+
 import config from '../config';
 
 // Create API instance with site credentials

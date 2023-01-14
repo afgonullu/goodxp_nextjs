@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import type { IXTemplate } from './XTemplate';
 import XTemplate from './XTemplate';
 
