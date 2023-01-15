@@ -1,10 +1,16 @@
+import Link from 'next/link';
+
 import ghost from '../lib/services/ghost';
 
 const Home = ({ posts }: { posts: any }) => (
   <div>
-    {posts.map((post: any) => (
-      <p>{post.title}</p>
-    ))}
+    <ul>
+      {posts.map((post: any) => (
+        <Link href={`/writings/${post.slug}`} key={post.id}>
+          <li>{post.title}</li>
+        </Link>
+      ))}
+    </ul>
   </div>
 );
 

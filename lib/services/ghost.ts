@@ -9,20 +9,21 @@ const api = new GhostContentAPI({
   version: 'v5.0',
 });
 
-async function getPosts() {
-  const posts = await api.posts
-    .browse({
-      limit: 'all',
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+const getPosts = async () => {
+  const posts = await api.posts.browse({ limit: 'all' });
 
   return posts;
-}
+};
+
+const getSinglePost = async (slug: string) => {
+  const post = await api.posts.read({ slug });
+
+  return post;
+};
 
 const ghost = {
   getPosts,
+  getSinglePost,
 };
 
 export default ghost;
