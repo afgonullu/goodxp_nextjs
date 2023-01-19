@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -46,7 +47,12 @@ module.exports = {
           500: "#9b59b6",
           DEFAULT: "#9b59b6"
         }
-      }
+      },
+      fontFamily: {
+        sans: ['var(--font-jost)', ...fontFamily.sans],
+        serif: ['var(--font-besley)', ...fontFamily.serif],
+        bodoni: ['var(--font-bodoni)', ...fontFamily.serif],
+      },
     },
   },
   plugins: [
