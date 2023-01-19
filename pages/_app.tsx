@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import '../styles/globals.css';
 
 import { Besley, Bodoni_Moda, Jost } from '@next/font/google';

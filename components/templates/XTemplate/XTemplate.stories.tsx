@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import type { IXTemplate } from './XTemplate';
+import type { IXTemplateProps } from './XTemplate';
 import XTemplate from './XTemplate';
 
-const props: IXTemplate = {
+const props: IXTemplateProps = {
   name: 'XTemplate',
 };
 
